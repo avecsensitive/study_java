@@ -1,0 +1,22 @@
+
+
+Public class Ex3_oper;
+   public Ex3_oper() {
+   }
+
+   public static void main(String[] var0) {
+      byte var1 = 30;
+      byte var2 = 35;
+      boolean var3 = var2 - var1 > 5 && var1 > 30;
+      System.out.println("&& :=" + var3);
+      System.out.println("age : " + var1);
+      byte var4 = 10;
+      byte var5 = 20;
+      if (var4 + 10 <= 20 && var5 - 10 != 11) {
+         boolean var6 = false;
+      } else {
+         boolean var10000 = true;
+      }
+
+   }
+}
