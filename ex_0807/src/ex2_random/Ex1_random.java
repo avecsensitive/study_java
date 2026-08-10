@@ -1,0 +1,36 @@
+package ex2_random;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ex1_random {
+    public static void main(String[] args) {
+        
+        //256~1378 사이의 난수
+        //new Random().nextInt (난수의 범위) + 시작 수
+        // \//new Random().nextInt (큰수 - 작은수 +1 ) + 시작 수
+        //int num = new Random().nextInt(7) + 7; 
+
+        int num = new Random().nextInt(1378-216 +1 ) + 256;
+
+
+        System.out.println( num);
+    
+        //2~9 사이의 난수에 해당하는 구구단
+
+        int dan = new Random().nextInt(9 - 2 +1) + 2;
+        
+        for (int i = 1;i <=9; i++){
+             System.out.println( dan + " * " + (dan *i));
+        }
+        
+            }
+
+    
+    
+    
+    
+    
+    }//main
+
+
