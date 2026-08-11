@@ -10,13 +10,13 @@ public class Ex2_multifor {
         int cnt = 0;
 
         for (int i = 1; i <= 3; i++) {
-           
-            System.out.printf("%02d ", ++cnt);
-        
-        } // inner
 
-        for (int j = 1; j <= 4; j++) {
-           
+            for (int j = 1; j <= 4; j++) {
+            
+                System.out.printf("%02d ", ++cnt);
+
+            } // inner
+
             System.out.println();
 
         } // outer

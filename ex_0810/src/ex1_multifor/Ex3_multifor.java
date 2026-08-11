@@ -10,11 +10,12 @@ public class Ex3_multifor {
         char ch = 'A';
 
         for (int i = 1; i <= 3; i++) {
-            System.out.print(ch++ + " ");
+            
+            for (int j = 1; j <= 4; j++) {
+             
+                System.out.print(ch++ + " ");
 
-        } // inner
-
-        for ( int j = 1; j <= 4; j++) {
+            } // inner
 
             System.out.println();
 
