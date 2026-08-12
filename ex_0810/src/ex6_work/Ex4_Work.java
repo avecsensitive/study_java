@@ -12,23 +12,47 @@ public class Ex4_Work {
         // 최대공약수 : 6
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("수1: ");
-        int 수1 = sc.nextInt();
-        System.out.print("수2:");
-        int 수2 = sc.nextInt();
-        for (int i = 1; i >= 1; i++) {
 
-            out: for (int j = 1; i >= 1; j++) {
+        System.out.print("수1 : ");
+        int su1 = sc.nextInt();
 
-                int res = i + j;
+        System.out.print("수2 : ");
+        int su2 = sc.nextInt();
 
-                if (res % i == 0 && res % j == 0) {
+        if ( su1 > su2 ){
 
-                } // if
-                System.out.printf("%c최대공약수:%d,%d,%d",i, j, i*j);
+            int su3 = su1;
+            su1 = su2;
+            su2 = su3;
+
+        }//if
+        
+        int i = su1;
+
+        for ( ; i >=1; i--){
+            
+            if( su1 % i == 0 && su2 % i ==0 ){
                 break;
-            } // inner
-            System.out.println();
-        } // outer
+            }
+
+            System.out.println("최대공약수 :" + i);
+        }
+        
+        System.out.println("--------------------");
+
+            //유클리드 호제법으로 최대 공약수 구하기
+            while ( su2 != 0) {
+                
+                int tmp = su1 % su2;
+                su1 = su2;
+                su2 = tmp;
+            }//while
+        
+            System.out.println("최대공약수 : " + su1);
+        
+        
+        
+        
+        
     }// main
 }

@@ -1,5 +1,7 @@
 package ex6_work;
 
+import java.util.Scanner;
+
 public class Ex6_Work {
     public static void main(String[] args) {
         
@@ -9,7 +11,22 @@ public class Ex6_Work {
         //입력 : 7
         // 1 1 2 3 5 8 13
 
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("입력 :");
+        int cnt = sc.nextInt();
+
+        int n1 = 1;
+        int n2 = 2;
+        int n3 = 3;
+
+        for( int i = 0; i < cnt; i++){
+            n2 = n3;
+            n3 = n1;
+            n1 = n2 + n3;
+            System.out.println( n3 + " ");
+
+        }//for
 
     }//main
 }
