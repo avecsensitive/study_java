@@ -11,25 +11,51 @@ public class Ex7_work {
         // 04 09 02
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("입력값: ");
-        int n = sc.nextInt();
+        System.out.print("홀수: ");
+        // int size = new int[size][size];
+        int size = sc.nextInt();
 
-        int arr[][] =new int [3][3];
+        int[][] square = new int[size][size];
+        int num = 1;
 
-        for (int i = 0; i < arr.length; i++) {
+        int y = 0;// y축(행)
+        int x = 0;// x축(열)
 
-            for (int j = 0; j < arr[i].length; j++) {
+        x = size / 2;
 
-                int sum1 = (arr[i].length);
-                int sum2 = (arr[j].length);
-                
-                
-                System.out.print(arr[i][j] + " ");
+        while (num <= size * size) {
+
+            square[y][x] = num;
+
+            if (num % size == 0) {
+                y++;
+            } else {
+                y--;
+                x++;
+            }
+
+            if (y < 0)
+                y = size - 1;
+
+            if (x >= size)
+                x = 0;
+
+            num++;
+
+        } // while
+
+        for (int i = 0; i < size; i++) {
+
+            for (int j = 0; j < size; j++) {
+
+                System.out.printf("%02d ", square[i][j]);
+
             } // inner
 
             System.out.println();
 
         } // outer
 
-    }// main
+    }
+    // main
 }
