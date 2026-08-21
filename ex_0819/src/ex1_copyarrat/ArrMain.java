@@ -1,0 +1,14 @@
+package ex1_copyarrat;
+
+public class ArrMain {
+    public static void main(String[] args) {
+        
+        int[] array ={ 1, 2, 3, 4, 5};
+       
+        ArraySub as = new ArrSub();
+        as.param(array); 
+
+        System.out.println("sub :" + arr[0]);
+
+    }//main
+}
